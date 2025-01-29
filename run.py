@@ -1,33 +1,27 @@
+# Import packages
+from dash import Dash, html, dash_table, dcc
+import pandas as pd
+import plotly.express as px
 import os
-import csv
-import sqlite3
 
 # basic setup
-filename = input("Enter the name of the file to load in, or X if you wish to run only on previous data: ")
-con = sqlite3.connect("transactions.db")
-cur = con.cursor()
-try:
-    cur.execute("CREATE TABLE transactions(transaction_date, post_date, card, name, category, debit, credit)")
-except sqlite3.OperationalError as e:
-    print("Database already exists")
+filename = input("Enter the name of the file to load in: ")
+df = pd.read_csv(os.path.join(os.path.abspath("."), "data", filename))
+total = str(df["Debit"].sum())
+paid = str(df["Credit"].sum())
 
-# read new data in if indicated
-if filename != "X":
-    with open(os.path.join(os.path.abspath("."), "data", filename), "r") as file:
-        reader = csv.reader(file)
-        FIRST = True
-        for row in reader:
-            #print(row)
-            if FIRST:
-                FIRST = False
-                continue
-            else:
-                clean_row = [x.replace("'","").strip() for x in row]
-                data = "'" + "', '".join(clean_row) + "'"
-                #print(data)
-                cur.execute("INSERT INTO transactions VALUES (" + data + ")")
-                con.commit()
+# Initialize the app
+app = Dash()
 
-# now that the data is contained, visualize it
-else:
-    print("visualizing")
+# App layout
+app.layout = [
+    html.Div(children='Monthly Spending'),
+    dash_table.DataTable(data=df.to_dict('records'), page_size=10),
+    dcc.Graph(figure=px.pie(df, values='Debit', names='Category')),
+    html.Div([dcc.Markdown("# Total Spending: " + total)]),
+    html.Div([dcc.Markdown("# Total Paid: " + paid)])
+]
+
+# Run the app
+if __name__ == '__main__':
+    app.run(debug=True)
