@@ -9,9 +9,6 @@ files = [f for f in os.listdir(data_path) if f.endswith('.csv')]
 df_list = [pd.read_csv(os.path.join(data_path, file)) for file in files]
 df = pd.concat(df_list, ignore_index=True)
 
-import os
-import pandas as pd
-
 # Define the path to the custom categories folder
 CATEGORY_FOLDER = "custom_categories"
 
@@ -67,5 +64,5 @@ for index, row in df.iterrows():
         save_vendor_to_category(vendor, category)
 
 # Save the categorized transactions back to CSV
-df.to_csv("categorized_transactions.csv", index=False)
+df.to_csv("data/categorized_transactions.csv", index=False)
 print("\nCategorization complete! Saved to 'categorized_transactions.csv'.")

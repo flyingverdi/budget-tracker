@@ -4,6 +4,24 @@ import pandas as pd
 import plotly.express as px
 import os
 
+# Define the path to the custom categories folder
+CATEGORY_FOLDER = "custom_categories"
+
+# Load category mappings from text files
+def load_categories():
+    categories = {}
+    category_names = []
+    print(" Categories:", os.listdir(os.path.join(os.path.abspath("."),CATEGORY_FOLDER)))
+    for file in os.listdir(os.path.join(os.path.abspath("."),CATEGORY_FOLDER)):
+        if file.endswith(".txt"):
+            category_name = file.replace(".txt", "")
+            category_names.append(category_name)
+            with open(os.path.join(CATEGORY_FOLDER, file), "r") as f:
+                vendors = [line.strip() for line in f.readlines()]
+                for vendor in vendors:
+                    categories[vendor.lower()] = category_name
+    return categories, category_names
+
 # Load all CSV files in 'data' folder
 data_path = os.path.join(os.path.abspath("."), "data")
 files = [f for f in os.listdir(data_path) if f.endswith('.csv')]
@@ -11,6 +29,15 @@ files = [f for f in os.listdir(data_path) if f.endswith('.csv')]
 # Read and concatenate all CSV files into one DataFrame
 df_list = [pd.read_csv(os.path.join(data_path, file)) for file in files]
 df = pd.concat(df_list, ignore_index=True)
+
+categories, _ = load_categories()
+
+for index, row in df.iterrows():
+    vendor = row['Description'].strip().lower()
+    if vendor in categories:
+        df.at[index, 'Custom Category'] = categories[vendor]
+    else:
+        df.at[index, 'Custom Category'] = 'Unknown'
 
 # Ensure proper data types
 df['Transaction Date'] = pd.to_datetime(df['Transaction Date'])
@@ -77,14 +104,14 @@ def update_tab(selected_year, selected_month):
         return html.Div("No transactions for this month.")
 
     # Generate Pie Chart
-    pie_chart = px.pie(filtered_df, values='Debit', names='Category', title=f"Spending Breakdown for {selected_month}")
+    pie_chart = px.pie(filtered_df, values='Debit', names='Custom Category', title=f"Spending Breakdown for {selected_month}")
 
     # Compute Total Spending and Payments
     total_spent = filtered_df["Debit"].sum()
     total_paid = filtered_df["Credit"].sum()
 
     return html.Div([
-        dash_table.DataTable(data=filtered_df.to_dict('records'), page_size=10),
+        dash_table.DataTable(data=filtered_df.to_dict('records'), page_size=10,sort_action="native"),
         dcc.Graph(figure=pie_chart),
         html.H3(f"Total Spending: ${total_spent:,.2f}"),
         html.H3(f"Total Paid: ${total_paid:,.2f}")
