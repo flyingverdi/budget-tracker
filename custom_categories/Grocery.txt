@@ -27,3 +27,11 @@ everyplate
 everyplate
 safeway #0637
 wal-mart #1896
+safeway #0617
+safeway #1568
+safeway #0839
+wm supercenter #1308
+safeway #1635
+wm supercenter #2751
+trader joe s #306
+debit purchase -visa costco whse #044littleton   co
