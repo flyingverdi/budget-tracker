@@ -103,15 +103,42 @@ def update_tab(selected_year, selected_month):
     if filtered_df.empty:
         return html.Div("No transactions for this month.")
 
-    # Generate Pie Chart
+    # Generate Pie Chart (dark styled)
     pie_chart = px.pie(filtered_df, values='Debit', names='Custom Category', title=f"Spending Breakdown for {selected_month}")
+    pie_chart.update_layout(
+        template="plotly_dark",
+        paper_bgcolor="#1c1f26",
+        plot_bgcolor="#1c1f26",
+        font_color="#e6e8eb",
+        legend_font_color="#e6e8eb",
+    )
 
     # Compute Total Spending and Payments
     total_spent = filtered_df["Debit"].sum()
     total_paid = filtered_df["Credit"].sum()
 
     return html.Div([
-        dash_table.DataTable(data=filtered_df.to_dict('records'), page_size=10,sort_action="native"),
+        dash_table.DataTable(
+            data=filtered_df.to_dict('records'),
+            page_size=10,
+            sort_action="native",
+            style_header={
+                'backgroundColor': '#1c1f26',
+                'color': '#9aa4b2',
+                'fontWeight': 'bold',
+                'border': '1px solid #2e333d',
+            },
+            style_cell={
+                'backgroundColor': '#1c1f26',
+                'color': '#e6e8eb',
+                'border': '1px solid #2e333d',
+                'textAlign': 'left',
+                'padding': '8px',
+            },
+            style_data_conditional=[
+                {'if': {'row_index': 'odd'}, 'backgroundColor': '#191c22'},
+            ],
+        ),
         dcc.Graph(figure=pie_chart),
         html.H3(f"Total Spending: ${total_spent:,.2f}"),
         html.H3(f"Total Paid: ${total_paid:,.2f}")

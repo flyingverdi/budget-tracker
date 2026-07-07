@@ -1,0 +1,90 @@
+/* Dark theme for the Monthly Spending Dashboard */
+
+:root {
+    --bg:          #121417;
+    --bg-elevated: #1c1f26;
+    --bg-hover:    #262b34;
+    --border:      #2e333d;
+    --text:        #e6e8eb;
+    --text-muted:  #9aa4b2;
+    --accent:      #4f9dff;
+}
+
+html, body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#react-entry-point > div,
+.dash-app-content {
+    padding: 0 24px 40px;
+}
+
+h1 {
+    color: var(--text);
+    font-weight: 600;
+    padding: 24px 0 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+h3 {
+    color: var(--text);
+    font-weight: 500;
+}
+
+/* ---- Tabs ---- */
+.dash-tabs, .tab-container {
+    border-color: var(--border) !important;
+}
+
+.tab {
+    background-color: var(--bg-elevated) !important;
+    color: var(--text-muted) !important;
+    border-color: var(--border) !important;
+    border-bottom: none !important;
+}
+
+.tab:hover {
+    background-color: var(--bg-hover) !important;
+    color: var(--text) !important;
+}
+
+.tab--selected {
+    background-color: var(--bg) !important;
+    color: var(--accent) !important;
+    border-top: 2px solid var(--accent) !important;
+    border-left-color: var(--border) !important;
+    border-right-color: var(--border) !important;
+}
+
+/* ---- DataTable ---- */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner table {
+    --hover: var(--bg-hover);
+}
+
+.dash-spreadsheet-inner th,
+.dash-spreadsheet-inner td {
+    background-color: var(--bg-elevated) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
+
+.dash-spreadsheet-inner th {
+    color: var(--text-muted) !important;
+    font-weight: 600;
+}
+
+.dash-spreadsheet-inner .column-header--sort {
+    color: var(--text-muted) !important;
+}
+
+/* Pagination controls */
+.dash-table-container .previous-next-container button,
+.dash-table-container .page-number input {
+    background-color: var(--bg-elevated) !important;
+    color: var(--text) !important;
+    border-color: var(--border) !important;
+}
