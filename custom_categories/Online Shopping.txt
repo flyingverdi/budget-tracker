@@ -40,7 +40,6 @@ amazon mktpl*yf4ng5rn3
 ebay o*06-13543-36742
 ebay o*17-13514-64949
 ebay o*17-13514-64950
-ebay o*17-13514-64949
 amazon mktpl*9v8td8i43
 amazon mktpl*dq22h9z83
 ebay o*11-13500-21602
@@ -125,7 +124,6 @@ amazon mktpl*nn98s96y2
 amazon mktpl*nz4vj1u61
 amazon.com*nz74y3bm0
 ebay o*23-13096-36639
-ebay o*11-13111-70505
 ebay o*11-13111-70504
 amazon.com*nb95i6ho1
 amazon mktpl*nb2bh8z21
@@ -161,7 +159,6 @@ ebay o*08-12910-05261
 amazon mktpl*252hw5s23
 ebay o*03-12891-19688
 ebay o*02-12895-87030
-ebay o*03-12891-19688
 amazon mktpl*7k5qp7lz3
 amazon.com
 ebay o*16-12853-01479
@@ -184,9 +181,40 @@ ebay o*02-12738-81401
 ebay o*25-12633-69173
 ebay o*23-12712-08934
 amazon mktpl*s073k6nm3
-ebay o*27-12691-55463
 amazon mktpl*7r16k6fy3
 amazon mktpl*s35bg7p43
 amzn mktp us*z74t42d01
-ebay o*25-12633-69173
 ebay o*24-12649-47456
+amazon
+amzn
+ebay
+newegg
+alipay
+thriftbooks
+thrift books
+half price books
+2nd and charles
+etsy
+aliexpress
+framework*
+bambulab
+coff.ee
+paypal *moldedpulp
+paypal *bakercreek
+molded pulp
+baker creek
+pyrex
+sp fangamer
+fangamer
+best buy
+adafruit
+rvinyl
+carveit
+audible
+anthropic
+genesis ag
+apple.com
+pp*apple
+utah main campus
+campus store
+dinosaurforever

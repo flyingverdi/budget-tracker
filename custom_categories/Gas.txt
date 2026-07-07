@@ -7,18 +7,14 @@ safeway fuel 5827
 golden sinclair
 speedway 08927 224 hwy
 pendleton oil
-pendleton oil
 loaf n jug 0083
 conoco - alta convenie
 circle k # 41167
-loaf n jug 0083
 loaf n jug 0011
 phillips 66 - jenny's
 king soopers #0682 fue
 phillips 66 - stop n's
-king soopers #0682 fue
 loaf n jug #0083
-king soopers #0682 fue
 circle k 05307
 chevron 0376935
 maverik #478
@@ -40,3 +36,33 @@ loaf n jug 0081
 conoco - sei 29420
 phillips 66 - rocket 6
 shell oil 57443812201
+conoco
+phillips 66
+circle k
+loaf n jug
+maverik
+chevron
+exxon
+sinclair
+kum&go
+king soopers fue
+safeway fuel
+7-eleven
+speedway
+love's
+qt 
+quiktrip
+sunoco
+shell 
+valero
+stinker
+humdinger
+servicentro
+servcentro
+fuel
+buc-ee
+flying j
+pilot 111
+estacion de serv
+gasolinera
+everyday 57

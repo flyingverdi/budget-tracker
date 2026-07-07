@@ -4,8 +4,6 @@ airbnb * hmyftayd85
 airbnb * hms92neyhw
 southwes 5262303278572
 recreation.gov
-recreation.gov
-best western kiva inn
 best western kiva inn
 chile traditions
 raocoparks&wildlife co
@@ -18,7 +16,6 @@ pra-tonto natural brid
 american  0012123311330
 frontier  dkhngb
 wagon wheel cabins
-wagon wheel cabins
 masabi_rtd
 estacion de serv.ciuda
 cafe players liberia
@@ -27,7 +24,6 @@ pollolandia monteverde
 casa variedades cerro
 nativo restobar
 souvenir la esperanza
-casa variedades cerro
 paypal *fincaelpara
 panaderia el hornito
 farmacia don gerardo l
@@ -35,8 +31,6 @@ soda shangri la
 pali monteverde bnmcot
 tienda macondo
 paypal *viator-trip
-panaderia el hornito
-nativo restobar
 soda ferry tambor 4 (1
 refugio de vida silves
 soda el artesano
@@ -50,9 +44,6 @@ burrito amor
 teatulia den
 super rinde mas nosara
 rosis soda tica
-super rinde mas nosara
-super rinde mas nosara
-super rinde mas nosara
 costa rent a car liber
 restaurante il pepero
 paypal *genesis ag
@@ -60,9 +51,6 @@ paypal *viator-trip it
 airbnb * hm3z9k8pnt
 curu wildlife refuge
 paypal *coloradoint
-paypal *coloradoint
-pti* peek selvatura pa
-pti* peek selvatura pa
 pti* peek selvatura pa
 reserva monteverde
 paypal *internation
@@ -72,7 +60,6 @@ py *kung fu tea - mand
 den public parking
 pan asian express mand
 krispy kreme #0949
-krispy kreme #0949
 sphere-concessions
 bonannos new york pizz
 great american bagel l
@@ -81,3 +68,54 @@ monorail ticketing svc
 springs preserve
 airbnb * hmtwpkcwky
 morrison parking
+airbnb
+southwes
+southwest
+frontier
+united air
+delta air
+american  0012
+marriott
+hilton
+best western
+hotel
+airlines
+enterprise rent
+hertz
+avis
+expedia
+koa
+rv park
+cubesmart
+uhaul
+u-haul
+toll
+e 470
+e470
+wagon wheel
+excalibur
+finca
+viator
+costa rent a car
+rent a car
+car rental
+lyft
+uber
+frontier  dkh
+petrified forest
+picacho
+tonto natural
+great sand dune
+parks&wildlife
+raocoparks
+best western kiva
+outside livin
+awx*outside
+pra-
+wnpa
+rocky mountain nationa
+rmnp
+beaver meadows
+curu wildlife
+webcheckout naviera
+monorail ticketing

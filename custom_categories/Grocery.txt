@@ -1,9 +1,6 @@
 safeway #2722
-safeway #2722
 wm supercenter #5049
 safeway 5827
-safeway #2722
-safeway #2722
 king soopers #0008
 king soopers #0009
 safeway #2342
@@ -19,11 +16,8 @@ wm supercenter #5123
 wal-mart #5049
 royal crest dairy
 wal-mart #1308
-royal crest dairy
 wal-mart #1175
 wal-mart #1369
-everyplate
-everyplate
 everyplate
 safeway #0637
 wal-mart #1896
@@ -35,3 +29,33 @@ safeway #1635
 wm supercenter #2751
 trader joe s #306
 debit purchase -visa costco whse #044littleton   co
+king soopers
+safeway
+walmart
+wal-mart
+wm supercenter
+costco
+www costco
+target 
+sams club
+sam's club
+sprouts
+trader joe
+whole foods
+wholefds
+publix
+natural grocers
+lucky
+super rinde
+megasuper
+aldi
+hellofresh
+home chef
+mines emarket
+market
+super montezuma
+tienda
+casa variedades
+pali monteverde
+smiths-food
+smiths food

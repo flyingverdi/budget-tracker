@@ -22,13 +22,10 @@ dragon lee restaurant
 csm - food court
 saffron indian fusion
 tst* anthony's - co-11
-csm - food court
 jp's asian bistro
 kabora afghan cuisine
 sq *pangea coffee roas
 tst*stodgy brewing co
-tst*stodgy brewing co
-mountain toad brewing
 mountain toad brewing
 csm - wow
 snarfs sandwiches 12
@@ -58,10 +55,8 @@ panda express #767
 sq *golden city brewer
 tst* bobs atomic burge
 tst* wetzel's pretzels
-taco bell 702542
 las palmas 1
 tst* windy saddle cafe
-taco bell 702542
 csom qdoba
 chipotle 0071
 tst* cafe 13
@@ -79,7 +74,6 @@ tst* storm peak brewer
 rendezvous restaurant
 holidaily - tech cente
 tst* jbk dtc
-tst* storm peak brewer
 tst* hypnotic chicken
 sq *backyard bird chic
 qdoba 2020
@@ -89,49 +83,33 @@ jimmy johns-1066
 cke*mystic biscuit del
 mcdonald's f6010
 chick-fil-a #03120
-jimmy johns-1066
 the golden mill
 slice*bigdaddysrusticp
 in-n-out lakewood
-jimmy johns-1066
 empire dairy king
 tst*humble house cafe
 domino's 6205
-tst*humble house cafe
-domino's 6205
 tst*san telmo market -
-the golden mill
 tst*bobs atomic burger
-tst*san telmo market -
-tst*humble house cafe
-domino's 6205
-the golden mill
 sq *big daddy bagels (
 fsp*holidaily brewing
 tst*the wandering pota
-domino's 6205
 chipotle 4738
 mcdonald's f23556
 sq *inclusions bakery
 arlenes beans
-jimmy johns-1066
 mcdonalds 40721
 old golden road liquor
 peak donuts llc
 mcdonalds 6010
-domino's 6205
 pp*doordash indiasbes
-jimmy johns-1066
 sq *golden sweets
-mcdonalds 6010
-sq *big daddy bagels (
 tst*ks dairy delite
 tst*kona bowls
 mcdonald's f40721
 louis'cafe inc
 tst*trailhead taphouse
 tst*la huacha
-fsp*new terrain brewin
 fsp*new terrain brewin
 sq *smokin wheels cate
 culvers lakewood
@@ -161,3 +139,128 @@ fuzziwigs candy sbs
 mcdonald's f5234
 outback #0620
 sq *bubblelicious @ co
+domino
+mcdonald
+jimmy john
+in-n-out
+chipotle
+qdoba
+starbucks
+dutch bros
+subway
+wendy
+taco bell
+chick-fil
+chick fil
+panera
+noodles
+tst*
+sq *
+kfc
+arby
+culver
+freddy
+panda express
+panda
+pizza
+cafe
+coffee
+brewing
+brewery
+brewer
+restaurant
+grill
+sushi
+thai
+ramen
+donut
+bagel
+deli
+bakery
+snarf
+raising canes
+red robin
+outback
+olive garden
+popeyes
+cheesecake
+teatulia
+burrito
+pho 
+dumpling
+dairy king
+frybread
+nativo
+empire dairy
+sphere-concession
+hypnotic chicken
+bird chic
+kabora
+saffron
+haveli
+sherpa house
+tomasita
+churchs chicken
+twisters
+african grill
+las palmas
+galaxy diner
+quiero
+d deli
+storm peak
+jbk dtc
+windy saddle
+backyard bird
+wetzel
+bobs atomic
+golden city brew
+chile traditions
+csm - 
+csom
+cmsvend
+food court
+rendezvous
+holidaily
+teriyaki
+cheba hut
+dragon lee
+jp's asian
+living the dream
+buzz & bustle
+cafe 13
+kfc/aw
+sp platero
+indias best
+india
+curry
+grateful bread
+honnibrook
+the corner slice
+auntie anne
+jjs bar
+big daddy
+megabite
+slice*
+uep*dumpling
+krispy kreme
+five guys
+dunkin
+new terrain brewin
+kung fu tea
+rosa mexican
+gordon ramsay fish
+soda 
+pan asian
+lulu`s frozen
+bonannos
+rolling waves
+johnny rockets
+pollolandia
+panaderia
+cke*mystic biscuit
+las brisas
+kfteausa
+armk red rocks
+denver performing arts
+fuzziwigs candy
+fsp*
