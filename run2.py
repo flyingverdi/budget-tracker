@@ -222,7 +222,21 @@ def remove_internal_payments(df):
 df = remove_internal_payments(df)
 
 # Load categories and apply them
-categories, _ = load_categories()
+categories, category_names = load_categories()
+
+# Fixed color per category so a category keeps the same color across every
+# monthly tab. Assigned in sorted (deterministic) order — the first eight hues
+# are the validated dark-mode categorical slots; 'Unknown' is pinned to gray.
+CATEGORY_PALETTE = [
+    "#3987e5", "#199e70", "#c98500", "#008300", "#9085e9", "#e66767",
+    "#d55181", "#d95926", "#22c1d6", "#a0d33c", "#f48fb1", "#b968e0",
+    "#ffca28", "#b08968", "#6d8fd4", "#e0a94b",
+]
+CATEGORY_COLORS = {
+    name: CATEGORY_PALETTE[i % len(CATEGORY_PALETTE)]
+    for i, name in enumerate(sorted(category_names))
+}
+CATEGORY_COLORS["Unknown"] = "#7f8c8d"
 
 # Add Custom Category column
 df['Custom Category'] = 'Unknown'
@@ -301,23 +315,45 @@ def update_tab(selected_year, selected_month):
     if filtered_df.empty:
         return html.Div("No transactions for this month.")
 
-    # Generate Pie Chart using Amount and Custom Category
-    pie_chart = px.pie(filtered_df, values='Amount', names='Custom Category', 
+    # Generate Pie Chart using Amount and Custom Category (dark styled).
+    # color + color_discrete_map pins each category to a fixed color so it's
+    # consistent across monthly tabs.
+    pie_chart = px.pie(filtered_df, values='Amount', names='Custom Category',
+                       color='Custom Category', color_discrete_map=CATEGORY_COLORS,
                        title=f"Spending Breakdown for {selected_month} {selected_year}")
+    pie_chart.update_layout(
+        template="plotly_dark",
+        paper_bgcolor="#1c1f26",
+        plot_bgcolor="#1c1f26",
+        font_color="#e6e8eb",
+        legend_font_color="#e6e8eb",
+    )
 
     # Compute Total Spending
     total_spent = filtered_df["Amount"].sum()
 
     return html.Div([
         dash_table.DataTable(
-            data=filtered_df.to_dict('records'), 
+            data=filtered_df.to_dict('records'),
             page_size=10,
             sort_action="native",
-            style_cell={'textAlign': 'left'},
+            style_header={
+                'backgroundColor': '#1c1f26',
+                'color': '#9aa4b2',
+                'fontWeight': 'bold',
+                'border': '1px solid #2e333d',
+            },
+            style_cell={
+                'backgroundColor': '#1c1f26',
+                'color': '#e6e8eb',
+                'border': '1px solid #2e333d',
+                'textAlign': 'left',
+                'padding': '8px',
+            },
             style_data_conditional=[
                 {
                     'if': {'row_index': 'odd'},
-                    'backgroundColor': 'rgb(248, 248, 248)'
+                    'backgroundColor': '#191c22'
                 }
             ]
         ),
